@@ -8,6 +8,8 @@ import {
 } from 'react-router-dom'
 
 import LandingPage from './routes/LandingPage'
+import AboutPage from './routes/about/AboutPage'
+import ContactPage from './routes/contact/ContactPage'
 
 function Layout() {
   return (
@@ -30,6 +32,8 @@ function App() {
         <Route path='/' element={<Layout />}>
           {/* props.index === default path === path='' */}
           <Route index element={<LandingPage />} />
+          <Route path='about' element={<AboutPage />} />
+          <Route path='contact' element={<ContactPage />} />
         </Route>
 
       </Routes>
