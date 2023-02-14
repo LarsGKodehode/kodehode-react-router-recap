@@ -5,16 +5,22 @@ import {
 
 import styles from './styles.module.css'
 
+import CustomDropdown from '../CustomDropdown/CustomDropdown'
+
+
+
 function Layout() {
   return (
     <div className={styles.App}>
       <header className={styles.header}>
         <h1>Header</h1>
 
+
         <nav>
-          <Link to='/'>Home</Link>
+          <CustomDropdown />
+          {/* <Link to='/'>Home</Link>
           <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
+          <Link to='/contact'>Contact</Link> */}
         </nav>
       </header>
 
