@@ -1,6 +1,10 @@
+import styles from './styles.module.css'
+
 function ContactPage() {
   return (
-    <h2>Contact page</h2>
+    <div className={styles.page}>
+      <h2>Contact page</h2>
+    </div>
   )
 }
 

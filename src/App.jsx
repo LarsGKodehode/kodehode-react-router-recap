@@ -4,31 +4,14 @@ import {
   // Routes and route
   Routes,
   Route,
-  Outlet,
-  Link,
 } from 'react-router-dom'
+
+import Layout from './components/Layout/Layout'
 
 import LandingPage from './routes/LandingPage'
 import AboutPage from './routes/about/AboutPage'
 import ContactPage from './routes/contact/ContactPage'
 
-function Layout() {
-  return (
-    <>
-      <header>
-        <h1>Header</h1>
-
-        <nav>
-          <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link>
-        </nav>
-      </header>
-
-      <Outlet />
-    </>
-  )
-}
 
 function App() {
   return (

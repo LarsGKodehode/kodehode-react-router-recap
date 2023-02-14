@@ -1,6 +1,10 @@
+import styles from './styles.module.css'
+
 function LandingPage() {
   return (
-    <h2>Landing Page</h2>
+    <div className={styles.page}>
+      <h2>Landing Page</h2>
+    </div>
   )
 }
 

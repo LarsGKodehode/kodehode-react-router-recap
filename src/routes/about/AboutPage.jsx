@@ -1,6 +1,10 @@
+import styles from './styles.module.css'
+
 function AboutPage() {
   return (
-    <h2>About Page</h2>
+    <div className={styles.page}>
+      <h2>About Page</h2>
+    </div>
   )
 }
 
