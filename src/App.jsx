@@ -4,7 +4,8 @@ import {
   // Routes and route
   Routes,
   Route,
-  Outlet
+  Outlet,
+  Link,
 } from 'react-router-dom'
 
 import LandingPage from './routes/LandingPage'
@@ -16,6 +17,12 @@ function Layout() {
     <>
       <header>
         <h1>Header</h1>
+
+        <nav>
+          <Link to='/'>Home</Link>
+          <Link to='/about'>About</Link>
+          <Link to='/contact'>Contact</Link>
+        </nav>
       </header>
 
       <Outlet />
@@ -26,7 +33,6 @@ function Layout() {
 function App() {
   return (
     <Router>
-
       <Routes>
 
         <Route path='/' element={<Layout />}>
@@ -37,7 +43,6 @@ function App() {
         </Route>
 
       </Routes>
-
     </Router>
   )
 }
