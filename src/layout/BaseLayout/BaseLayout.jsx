@@ -4,7 +4,13 @@ import {
 
 import styles from './styles.module.css'
 
-import { CustomDropdown } from '../../components/CustomDropdown/CustomDropdown'
+import { NavbarNavigation } from '../../components/NavbarNavigation/NavbarNavigation'
+
+const siteRoutes = [
+  { to: '/', title: 'Home' },
+  { to: '/about', title: 'About' },
+  { to: '/contact', title: 'Contact' },
+]
 
 export function BaseLayout() {
   return (
@@ -13,7 +19,7 @@ export function BaseLayout() {
         <h1>Header</h1>
 
         <nav>
-          <CustomDropdown />
+          <NavbarNavigation paths={siteRoutes} />
         </nav>
       </header>
 

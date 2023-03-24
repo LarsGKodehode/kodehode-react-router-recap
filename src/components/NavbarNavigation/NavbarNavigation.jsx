@@ -3,20 +3,16 @@ import { Link } from 'react-router-dom'
 
 import styles from './styles.module.css'
 
-const navlinks = [
-  { to: '/', title: 'Home' },
-  { to: '/about', title: 'About' },
-  { to: '/contact', title: 'Contact' },
-]
-
-export function CustomDropdown() {
+export function NavbarNavigation({
+  paths
+}) {
   return (
     <Menu>
       <Menu.Button className={styles.button}>Navigation</Menu.Button>
       <div className={styles.container}>
         <Menu.Items className={styles.items}>
           {
-            navlinks.map(
+            paths.map(
               (link) => {
                 return (
                   <Menu.Item key={link.title}>
