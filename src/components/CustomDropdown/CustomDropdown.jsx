@@ -12,7 +12,7 @@ const navlinks = [
 function CustomDropdown() {
   return (
     <Menu>
-      <Menu.Button className={styles.button} >Navigation</Menu.Button>
+      <Menu.Button className={styles.button}>Navigation</Menu.Button>
       <div className={styles.container}>
         <Menu.Items className={styles.items}>
           {
@@ -20,7 +20,7 @@ function CustomDropdown() {
               (link) => {
                 return (
                   <Menu.Item key={link.title}>
-                    {({ active }) => (
+                    {() => (
                       <Link
                         to={link.to}
                         className={styles.link}
