@@ -4,9 +4,10 @@ import {
   // Routes and route
   Routes,
   Route,
+  Navigate,
 } from 'react-router-dom'
 
-import Layout from './components/Layout/Layout'
+import BaseLayout from './layout/BaseLayout/BaseLayout'
 
 import LandingPage from './routes/LandingPage'
 import AboutPage from './routes/about/AboutPage'
@@ -18,12 +19,13 @@ function App() {
     <Router>
       <Routes>
 
-        <Route path='/' element={<Layout />}>
-          {/* props.index === default path === path='' */}
+        <Route path='/' element={<BaseLayout />}>
           <Route index element={<LandingPage />} />
           <Route path='about' element={<AboutPage />} />
           <Route path='contact' element={<ContactPage />} />
         </Route>
+
+        <Route path='*' element={<Navigate to="/" replace />} />
 
       </Routes>
     </Router>

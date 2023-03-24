@@ -5,22 +5,16 @@ import {
 
 import styles from './styles.module.css'
 
-import CustomDropdown from '../CustomDropdown/CustomDropdown'
+import CustomDropdown from '../../components/CustomDropdown/CustomDropdown'
 
-
-
-function Layout() {
+function BaseLayout() {
   return (
     <div className={styles.App}>
       <header className={styles.header}>
         <h1>Header</h1>
 
-
         <nav>
           <CustomDropdown />
-          {/* <Link to='/'>Home</Link>
-          <Link to='/about'>About</Link>
-          <Link to='/contact'>Contact</Link> */}
         </nav>
       </header>
 
@@ -35,4 +29,4 @@ function Layout() {
   )
 }
 
-export default Layout
+export default BaseLayout

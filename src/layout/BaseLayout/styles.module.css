@@ -5,7 +5,12 @@
   min-height: 100vh;
 }
 
-.header {}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 1rem;
+}
 
 .main {
   flex-grow: 10;
