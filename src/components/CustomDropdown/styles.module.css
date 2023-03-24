@@ -1,5 +1,5 @@
 .button {
-  background-color: var(--color-primary-light);
+  background-color: var(--color-contrast);
   padding: .5rem;
   border-radius: 10px 10px 0px 0px;
   border-width: 1px;
@@ -18,7 +18,7 @@
   width: 100%;
   gap: 1rem;
 
-  background-color: var(--color-primary-light);
+  background-color: var(--color-contrast);
   border-radius: 0px 0px 10px 10px;
   border-width: 1px;
   padding-top: .9rem;
