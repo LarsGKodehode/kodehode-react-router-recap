@@ -2,7 +2,7 @@
 
 ## About
 
-This i a simple React template. The main takeaway from here is the structure.
+This is a simple React template. The main takeaway from here is the structure.
 - Where are the router defined and set
 - Where have we put the routes
 - Where are your custom components defined
