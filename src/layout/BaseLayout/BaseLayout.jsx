@@ -5,9 +5,9 @@ import {
 
 import styles from './styles.module.css'
 
-import CustomDropdown from '../../components/CustomDropdown/CustomDropdown'
+import { CustomDropdown } from '../../components/CustomDropdown/CustomDropdown'
 
-function BaseLayout() {
+export function BaseLayout() {
   return (
     <div className={styles.App}>
       <header className={styles.header}>
@@ -26,5 +26,3 @@ function BaseLayout() {
     </div>
   )
 }
-
-export default BaseLayout

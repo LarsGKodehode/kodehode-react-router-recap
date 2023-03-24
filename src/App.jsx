@@ -7,14 +7,14 @@ import {
   Navigate,
 } from 'react-router-dom'
 
-import BaseLayout from './layout/BaseLayout/BaseLayout'
+import { BaseLayout } from './layout/BaseLayout/BaseLayout'
 
-import LandingPage from './routes/LandingPage'
-import AboutPage from './routes/about/AboutPage'
-import ContactPage from './routes/contact/ContactPage'
+import { LandingPage } from './routes/LandingPage'
+import { AboutPage } from './routes/about/AboutPage'
+import { ContactPage } from './routes/contact/ContactPage'
 
 
-function App() {
+export function App() {
   return (
     <Router>
       <Routes>
@@ -31,5 +31,3 @@ function App() {
     </Router>
   )
 }
-
-export default App

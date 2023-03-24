@@ -9,7 +9,7 @@ const navlinks = [
   { to: '/contact', title: 'Contact' },
 ]
 
-function CustomDropdown() {
+export function CustomDropdown() {
   return (
     <Menu>
       <Menu.Button className={styles.button}>Navigation</Menu.Button>
@@ -39,5 +39,3 @@ function CustomDropdown() {
     </Menu>
   )
 }
-
-export default CustomDropdown
