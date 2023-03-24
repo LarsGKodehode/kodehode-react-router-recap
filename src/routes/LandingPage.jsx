@@ -2,9 +2,9 @@ import styles from './styles.module.css'
 
 function LandingPage() {
   return (
-    <div className={styles.page}>
+    <main className={styles.page}>
       <h2>Landing Page</h2>
-    </div>
+    </main>
   )
 }
 

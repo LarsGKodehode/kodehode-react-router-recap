@@ -18,9 +18,7 @@ function BaseLayout() {
         </nav>
       </header>
 
-      <main className={styles.main}>
-        <Outlet />
-      </main>
+      <Outlet />
 
       <footer className={styles.footer}>
         <h4>Footer</h4>
