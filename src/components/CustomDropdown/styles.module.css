@@ -1,26 +1,30 @@
-.container {
-  position: relative;
-}
-
 .button {
+  background-color: rgba(251, 241, 241, 0.517);
   padding: .5rem;
   border-radius: 10px 10px 0px 0px;
   border-width: 1px;
-  background-color: rgba(182, 156, 156, 0.517)
+  font-weight: 800;
+}
+
+.container {
+  position: relative;
 }
 
 .items {
   position: absolute;
   display: flex;
-  width: 100%;
   flex-direction: column;
+  align-items: center;
+  width: 100%;
   gap: 1rem;
 
-  background-color: rgba(182, 156, 156, 0.517);
+  background-color: rgba(251, 241, 241, 0.517);
   border-radius: 0px 0px 10px 10px;
   border-width: 1px;
   padding-top: .9rem;
   padding-bottom: .9rem;
 }
 
-.link {}
+.link {
+  font-weight: 800;
+}
