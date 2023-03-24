@@ -13,7 +13,6 @@ import { LandingPage } from './routes/LandingPage'
 import { AboutPage } from './routes/about/AboutPage'
 import { ContactPage } from './routes/contact/ContactPage'
 
-
 export function App() {
   return (
     <Router>
